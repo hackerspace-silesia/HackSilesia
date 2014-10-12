@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> init
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -69,6 +72,7 @@ $(function() {
 $('#name').focus(function() {
     $('#success').html('');
 });
+<<<<<<< HEAD
 =======
 $(function() {
 
@@ -141,3 +145,5 @@ $('#name').focus(function() {
     $('#success').html('');
 });
 >>>>>>> add template
+=======
+>>>>>>> init

@@ -7,7 +7,10 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+<<<<<<< HEAD
     background-color: #eee;
+=======
+>>>>>>> init
 }
 
 .text-muted {
@@ -15,7 +18,11 @@ body {
 }
 
 .text-primary {
+<<<<<<< HEAD
     color: #1974D2;
+=======
+    color: #fed136;
+>>>>>>> init
 }
 
 p {
@@ -36,7 +43,11 @@ a.active {
 }
 
 a {
+<<<<<<< HEAD
     color: #1974D2;
+=======
+    color: #fed136;
+>>>>>>> init
 }
 
 a:hover,
@@ -70,12 +81,20 @@ h6 {
 }
 
 .btn-primary {
+<<<<<<< HEAD
     border-color: #1974D2;
+=======
+    border-color: #fed136;
+>>>>>>> init
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
+<<<<<<< HEAD
     background-color: #1974D2;
+=======
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .btn-primary:hover,
@@ -83,9 +102,15 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
+<<<<<<< HEAD
     border-color: #1974D2;
     color: #fff;
     background-color: #2B6CC4;
+=======
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+>>>>>>> init
 }
 
 .btn-primary:active,
@@ -109,25 +134,42 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
+<<<<<<< HEAD
     border-color: #1974D2;
     background-color: #1974D2;
 }
 
 .btn-primary .badge {
     color: #1974D2;
+=======
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-primary .badge {
+    color: #fed136;
+>>>>>>> init
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
+<<<<<<< HEAD
     border-color: #1974D2;
+=======
+    border-color: #fed136;
+>>>>>>> init
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
+<<<<<<< HEAD
     background-color: #1974D2;
+=======
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .btn-xl:hover,
@@ -135,9 +177,15 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
+<<<<<<< HEAD
     border-color: #1974D2;
     color: #fff;
     background-color: #2B6CC4;
+=======
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+>>>>>>> init
 }
 
 .btn-xl:active,
@@ -161,12 +209,21 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
+<<<<<<< HEAD
     border-color: #1974D2;
     background-color: #1974D2;
 }
 
 .btn-xl .badge {
     color: #1974D2;
+=======
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+>>>>>>> init
     background-color: #fff;
 }
 
@@ -177,7 +234,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+<<<<<<< HEAD
     color: #1974D2;
+=======
+    color: #fed136;
+>>>>>>> init
 }
 
 .navbar-default .navbar-brand:hover,
@@ -192,8 +253,13 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
+<<<<<<< HEAD
     border-color: #1974D2;
     background-color: #1974D2;
+=======
+    border-color: #fed136;
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -202,7 +268,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
+<<<<<<< HEAD
     background-color: #1974D2;
+=======
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .navbar-default .nav li a {
@@ -216,19 +286,31 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
+<<<<<<< HEAD
     color: #1974D2;
+=======
+    color: #fed136;
+>>>>>>> init
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
+<<<<<<< HEAD
     background-color: #1974D2;
+=======
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
+<<<<<<< HEAD
     background-color: #2B6CC4;
+=======
+    background-color: #fec503;
+>>>>>>> init
 }
 
 @media(min-width:768px) {
@@ -265,7 +347,10 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
+<<<<<<< HEAD
     background-color: #222;
+=======
+>>>>>>> init
     background-attachment: scroll;
     background-image: url(img/header-bg.jpg);
     background-position: center center;
@@ -352,19 +437,31 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+<<<<<<< HEAD
  .portfolio-item {
+=======
+#portfolio .portfolio-item {
+>>>>>>> init
     right: 0;
     margin: 0 0 15px;
 }
 
+<<<<<<< HEAD
 #topic .portfolio-item .portfolio-link {
+=======
+#portfolio .portfolio-item .portfolio-link {
+>>>>>>> init
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
+<<<<<<< HEAD
 #topic .portfolio-item .portfolio-link .portfolio-hover {
+=======
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+>>>>>>> init
     position: absolute;
     width: 100%;
     height: 100%;
@@ -375,11 +472,19 @@ section h3.section-subheading {
     transition: all ease .5s;
 }
 
+<<<<<<< HEAD
 #topic .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
 }
 
 #topic .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+=======
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+>>>>>>> init
     position: absolute;
     top: 50%;
     width: 100%;
@@ -390,6 +495,7 @@ section h3.section-subheading {
     color: #fff;
 }
 
+<<<<<<< HEAD
 #topic .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
@@ -400,6 +506,18 @@ section h3.section-subheading {
 }
 
 #topic .portfolio-item .portfolio-caption {
+=======
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+>>>>>>> init
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -407,24 +525,40 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
+<<<<<<< HEAD
 #topic .portfolio-item .portfolio-caption h4 {
+=======
+#portfolio .portfolio-item .portfolio-caption h4 {
+>>>>>>> init
     margin: 0;
     text-transform: none;
 }
 
+<<<<<<< HEAD
 #topic .portfolio-item .portfolio-caption p {
+=======
+#portfolio .portfolio-item .portfolio-caption p {
+>>>>>>> init
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
+<<<<<<< HEAD
 #topic * {
+=======
+#portfolio * {
+>>>>>>> init
     z-index: 2;
 }
 
 @media(min-width:767px) {
+<<<<<<< HEAD
     #topic .portfolio-item {
+=======
+    #portfolio .portfolio-item {
+>>>>>>> init
         margin: 0 0 30px;
     }
 }
@@ -466,7 +600,11 @@ section h3.section-subheading {
     float: right;
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     padding: 0 20px 20px 0;
+=======
+    padding: 0 20px 0 100px;
+>>>>>>> init
     text-align: left;
 }
 
@@ -495,7 +633,11 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
+<<<<<<< HEAD
     background-color: #1974D2;
+=======
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .timeline>li .timeline-image h4 {
@@ -506,7 +648,11 @@ section h3.section-subheading {
 
 .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
+<<<<<<< HEAD
     padding: 0 20px 20px 0;
+=======
+    padding: 0 20px 0 100px;
+>>>>>>> init
     text-align: left;
 }
 
@@ -611,7 +757,11 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-panel {
+<<<<<<< HEAD
         padding: 0 20px 20px 0;
+=======
+        padding: 0 20px 20px 100px;
+>>>>>>> init
     }
 
     .timeline>li .timeline-image {
@@ -625,7 +775,11 @@ section h3.section-subheading {
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
+<<<<<<< HEAD
         padding: 0 0 20px 20px;
+=======
+        padding: 0 100px 20px 20px;
+>>>>>>> init
     }
 }
 
@@ -636,7 +790,11 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
+<<<<<<< HEAD
     border: 7px solid #4F86F7;
+=======
+    border: 7px solid #fff;
+>>>>>>> init
 }
 
 .team-member h4 {
@@ -682,7 +840,11 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
+<<<<<<< HEAD
     border-color: #1974D2;
+=======
+    border-color: #fed136;
+>>>>>>> init
     box-shadow: none;
 }
 
@@ -720,8 +882,11 @@ section#contact .text-danger {
 
 footer {
     padding: 25px 0;
+<<<<<<< HEAD
     background-color: #333;
     color: #fff;
+=======
+>>>>>>> init
     text-align: center;
 }
 
@@ -763,7 +928,11 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
+<<<<<<< HEAD
     background-color: #1974D2;
+=======
+    background-color: #fed136;
+>>>>>>> init
 }
 
 .btn:focus,
@@ -846,12 +1015,20 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
+<<<<<<< HEAD
     background: #1974D2;
+=======
+    background: #fed136;
+>>>>>>> init
 }
 
 ::selection {
     text-shadow: none;
+<<<<<<< HEAD
     background: #1974D2;
+=======
+    background: #fed136;
+>>>>>>> init
 }
 
 img::selection {
@@ -863,5 +1040,9 @@ img::-moz-selection {
 }
 
 body {
+<<<<<<< HEAD
     webkit-tap-highlight-color: #1974D2;
+=======
+    webkit-tap-highlight-color: #fed136;
+>>>>>>> init
 }
