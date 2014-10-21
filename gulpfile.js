@@ -63,14 +63,14 @@ gulp.task('watch', function () {
     gulp.watch('./gulpfile.js', ['copy', 'scripts', 'html', 'css']);
     gulp.watch(getPath('js'), ['scripts']);
     gulp.watch(getPath('html'), ['html']);
-    gulp.watch(getPath('css'), ['css']);
+    gulp.watch(getPath('css'), ['css', 'copy']);
 });
 
 gulp.task('css', [], function () {
     gulp.src("./src/css/**/*.css")
-    .pipe(uncss({
-        html: ['./src/index.html']
-    }))
+    //.pipe(uncss({
+    //    html: ['./src/index.html']
+    //}))
     .pipe(cssmin())
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('./deploy/css'));
