@@ -808,3 +808,12 @@ body {
     max-width: 200px;
     max-height: 200px;
 }
+
+.prizes h3 {
+    text-transform: none;
+}
+
+.prizes img {
+    max-width: 200px;
+    max-height: 200px;
+}
