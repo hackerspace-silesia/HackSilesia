@@ -10,6 +10,7 @@ body {
     background-color: #eee;
 }
 
+
 .text-muted {
     color: #777;
 }
@@ -800,20 +801,45 @@ body {
     webkit-tap-highlight-color: #1974D2;
 }
 
-.patrons a h3 {
-    text-transform: none;
-}
-
-.patrons a img {
-    max-width: 200px;
-    max-height: 200px;
+.prizes {
+    height: 300px;
+    width: 250px;
+    margin: auto;
 }
 
 .prizes h3 {
     text-transform: none;
 }
 
-.prizes img {
-    max-width: 200px;
+.patrons {
+    height: 300px;
+}
+
+.patrons h3 {
+    text-transform: none;
+}
+
+.thumb-img {
+    height: 200px;
+}
+
+.thumb-img span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+
+.thumb-img img{
+    vertical-align: middle;
     max-height: 200px;
+    max-width: 200px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px #DDD solid;
+}
+
+.thumb-img img.no-border {
+    border: none;
 }
