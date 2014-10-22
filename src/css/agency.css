@@ -813,10 +813,42 @@ body {
 
 .patrons {
     height: 300px;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0.8;
+    border: 0 solid red;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.patrons:hover {
+    text-decoration: none;
+    color: #1974D2;
+    background-color: #eaeaea;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 .patrons h3 {
     text-transform: none;
+    font-weight: normal;
+    color: #444444;
+}
+
+.patrons:hover h3{
+    color: #444444;
 }
 
 .thumb-img {
