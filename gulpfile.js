@@ -35,6 +35,22 @@ var UGLIFY = {
     global_defs: {} // global definitions
 };
 
+var HTMLMIN = {
+    removeComments: true,
+    removeCommentsFromCDATA: true,
+    collapseWhitespace: true,
+};
+
+var UNCSS = {
+    html: ['./src/index.html'],
+    ignore: [
+        /navbar-shrink/
+    ]
+};
+
+var CSS = {
+    noAdvanced: true
+};
 
 function getPath(type) {
     return "./src/**/*." + type;
@@ -55,8 +71,9 @@ gulp.task('copy', function () {
         gulp.src('./src/**/*' + font)
             .pipe(gulp.dest('./deploy'));
     });
-    gulp.src('./src/css/agency.css')
-        .pipe(gulp.dest('./deploy/css'));
+
+    gulp.src('./CNAME')
+        .pipe(gulp.dest('./deploy'));
 });
 
 gulp.task('watch', function () {
@@ -67,22 +84,19 @@ gulp.task('watch', function () {
 });
 
 gulp.task('css', [], function () {
-    gulp.src("./src/css/**/*.css")
-    //.pipe(uncss({
-    //    html: ['./src/index.html']
-    //}))
-    .pipe(cssmin())
-    .pipe(concat('style.min.css'))
-    .pipe(gulp.dest('./deploy/css'));
-
-
+    gulp.src([
+        "./src/css/min/**/*.css",
+        "./src/css/agency.css",
+    ])
+        .pipe(uncss(UNCSS))
+        .pipe(cssmin(CSS))
+        .pipe(concat('style.min.css'))
+        .pipe(gulp.dest('./deploy/css'));
 });
 
 gulp.task('html', function () {
     gulp.src(getPath('html'))
-        .pipe(htmlmin({
-            collapseWhitespace: true
-        }))
+        .pipe(htmlmin(HTMLMIN))
         .pipe(gulp.dest('./deploy'));
 });
 
@@ -108,3 +122,4 @@ gulp.task('jshint', [], function () {
 });
 
 gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts']);
+// gulp.task('default', ['css']);

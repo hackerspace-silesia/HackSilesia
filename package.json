@@ -4,7 +4,7 @@
   "description": "Hacksilesia homepage",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hackerspace-silesia/HackSilesia",
   "devDependencies": {
+    "clean-css": "^2.2.16",
     "gulp": "^3.8.8",
     "gulp-concat": "^2.4.1",
     "gulp-htmlmin": "^0.2.0",
