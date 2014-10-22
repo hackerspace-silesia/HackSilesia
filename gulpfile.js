@@ -71,6 +71,9 @@ gulp.task('copy', function () {
         gulp.src('./src/**/*' + font)
             .pipe(gulp.dest('./deploy'));
     });
+
+    gulp.src('./CNAME')
+        .pipe(gulp.dest('./deploy'));
 });
 
 gulp.task('watch', function () {
