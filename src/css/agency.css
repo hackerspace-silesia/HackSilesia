@@ -844,7 +844,7 @@ body {
 .patrons h3 {
     text-transform: none;
     font-weight: normal;
-    color: #444444;
+    color: #444444; 
 }
 
 .patrons:hover h3{
@@ -853,23 +853,24 @@ body {
 
 .thumb-img {
     height: 200px;
+    position: relative;
 }
-
-.thumb-img span {
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-
 
 .thumb-img img{
-    vertical-align: middle;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 100%;
+    max-width: 100%;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
     border-radius: 15px;
     border: 1px #DDD solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .thumb-img img.no-border {
