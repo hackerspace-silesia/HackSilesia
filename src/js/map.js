@@ -1,4 +1,4 @@
-(function () {
+$('document').ready(function () {
     var map = L.map('map')
         .setView([50.26405, 19.02030], 16);
 
@@ -20,4 +20,4 @@
         .bindPopup(popup)
         .openPopup();
 
-})();
+});
