@@ -462,11 +462,11 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-panel {
-    float: right;
     position: relative;
     width: 100%;
     padding: 0 20px 20px 0;
     text-align: left;
+    margin-left: 90px;
 }
 
 .timeline>li .timeline-panel:before {
@@ -504,7 +504,6 @@ section h3.section-subheading {
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
-    float: right;
     padding: 0 20px 20px 0;
     text-align: left;
 }
@@ -556,6 +555,7 @@ section h3.section-subheading {
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
+        margin-left: 0;
     }
 
     .timeline>li .timeline-image {
