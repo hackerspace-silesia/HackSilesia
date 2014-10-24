@@ -10,7 +10,6 @@ body {
     background-color: #eee;
 }
 
-
 .text-muted {
     color: #777;
 }
@@ -844,7 +843,7 @@ body {
 .patrons h3 {
     text-transform: none;
     font-weight: normal;
-    color: #444444; 
+    color: #444444;
 }
 
 .patrons:hover h3{
@@ -876,3 +875,8 @@ body {
 .thumb-img img.no-border {
     border: none;
 }
+
+.map-container {
+    height: 400px;
+}
+
