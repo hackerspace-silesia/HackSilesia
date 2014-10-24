@@ -10,7 +10,6 @@ body {
     background-color: #eee;
 }
 
-
 .text-muted {
     color: #777;
 }
@@ -876,3 +875,8 @@ body {
 .thumb-img img.no-border {
     border: none;
 }
+
+.map-container {
+    height: 400px;
+}
+
