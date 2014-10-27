@@ -44,7 +44,9 @@ var HTMLMIN = {
 var UNCSS = {
     html: ['./src/index.html'],
     ignore: [
-        /navbar-shrink/
+        /navbar-shrink/,
+        /active/,
+
     ]
 };
 
@@ -122,4 +124,3 @@ gulp.task('jshint', [], function () {
 });
 
 gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts']);
-// gulp.task('default', ['css']);
