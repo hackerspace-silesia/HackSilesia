@@ -880,3 +880,6 @@ body {
     height: 400px;
 }
 
+div.row.next-row{
+    margin-top: 5px;
+}
