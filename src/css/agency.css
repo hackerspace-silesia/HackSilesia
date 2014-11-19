@@ -883,3 +883,19 @@ body {
 div.row.next-row{
     margin-top: 5px;
 }
+
+div.orbitvu-viewer {
+    border: 1px #DDD solid;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
