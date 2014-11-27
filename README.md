@@ -1,4 +1,4 @@
 HackSilesia
 ===========
 
-Strona hackathonu HackSilesia
+Strona hackathonu HackSilesia 
