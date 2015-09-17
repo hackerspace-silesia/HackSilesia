@@ -1,16 +1,17 @@
 {
-  "name": "HackSilesia",
-  "version": "0.1.0",
+  "name": "hacksilesia",
+  "version": "2.0.0",
   "description": "Hacksilesia homepage",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/hackerspace-silesia/HackSilesia.git"
   },
-  "author": "",
+  "author": "Dariusz 'Palid' Niemczyk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hackerspace-silesia/HackSilesia/issues"

@@ -12,6 +12,7 @@ var cssmin = require('gulp-minify-css');
 //HTML
 var htmlmin = require('gulp-htmlmin');
 
+var wiredep = require('wiredep').stream;
 
 var UGLIFY = {
     sequences: true, // join consecutive statemets with the “comma operator”
@@ -87,7 +88,6 @@ gulp.task('watch', function () {
 
 gulp.task('css', [], function () {
     gulp.src([
-        "./src/css/min/**/*.css",
         "./src/css/agency.css",
     ])
         .pipe(uncss(UNCSS))
@@ -121,6 +121,12 @@ gulp.task('jshint', [], function () {
     gulp.src([getPath('js'), '!./src/js/vendor/*.js', '!./src/js/libs/*.*'])
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('bower', function () {
+  gulp.src('./src/index.html')
+    .pipe(wiredep())
+    .pipe(gulp.dest('./deploy'));
 });
 
 gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts']);
