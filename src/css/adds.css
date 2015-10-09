@@ -1,0 +1,17 @@
+@font-face {
+    font-family: NiceFont;
+    src: url(inna czcionka bo mi sie nie podoba ;_;);
+}
+#hero h1, #hero h2 {
+    /*font-family: NiceFont;*/
+}
+p.lead {
+    text-align: justify;
+}
+.iframe-map {
+    border: 1px #C9C0BB solid;
+    box-shadow: 0px 0px 2px #888888;
+}
+.bigger-table {
+    font-size: 24pt;
+}
