@@ -25,12 +25,12 @@ p.lead {
     .bigger-table {font-size: 180%;}
 }
 .faq {
-    font-size: 180%;
+    font-size: 150%;
     font-weight: bold;
 }
 
 .faq p {
     text-align: justify;
-    font-size: 55%;
+    font-size: 12pt;
     font-weight: normal;
 }
