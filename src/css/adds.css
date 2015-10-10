@@ -16,11 +16,21 @@ p.lead {
     width: 15%;
 }
 @media (min-width: 1000px) { 
-    .bigger-table {font-size: 200%;}
+    .bigger-table {font-size: 240%;}
 }
 @media (min-width: 800px) { 
-    .bigger-table {font-size: 180%;}
+    .bigger-table {font-size: 200%;}
 }
 @media (min-width: 700px) { 
-    .bigger-table {font-size: 160%;}
+    .bigger-table {font-size: 180%;}
+}
+.faq {
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.faq p {
+    text-align: justify;
+    font-size: 55%;
+    font-weight: normal;
 }
