@@ -1,9 +1,12 @@
 @font-face {
-    font-family: NiceFont;
-    src: url(inna czcionka bo mi sie nie podoba ;_;);
+    font-family: HeaderFont;
+    src: url(../font/ocraextended.ttf);
 }
-#hero h1, #hero h2 {
-    /*font-family: NiceFont;*/
+
+body {
+    background-color: #FFF;
+    color: #404041;
+    font-family: 'Open Sans', sans-serif;
 }
 p.lead {
     text-align: justify;
@@ -33,4 +36,62 @@ p.lead {
     text-align: justify;
     font-size: 12pt;
     font-weight: normal;
+}
+
+#hero {
+    max-width: 100%;
+}
+
+#hero .container * {
+    display: none;
+}
+
+.featurette {
+    font-weight: 300;
+    font-size: 14pt;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.featurette h2 {
+    font-family: HeaderFont;
+    color: #fbaf3f;
+    width: 100%;
+    text-align: center;
+    font-size: 25pt;
+    padding-bottom: 50px;
+}
+
+.featurette h4 {
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.featurette p.lead {
+    font-size: 14pt;
+}
+
+.featurette strong, .featurette b {
+    font-weight: 600;
+}
+
+.text-yellow {
+    color: #fbaf3f;
+}
+
+.very-black {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.featurette-divider {
+    visibility: hidden;
+}
+
+.col-less {
+    width: 80%;
+}
+
+.more-bigger {
+    font-size: 18pt;
 }
