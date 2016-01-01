@@ -811,11 +811,11 @@
 }
 
 .light-blue.darken-1 {
-  background-color: #039be5 !important;
+  background-color: #fbaf3f !important;
 }
 
 .light-blue-text.text-darken-1 {
-  color: #039be5 !important;
+  color: #fbaf3f !important;
 }
 
 .light-blue.darken-2 {
@@ -2698,7 +2698,7 @@ span.badge-md.new:after {
 }
 
 a {
-  color: #039be5;
+  color: #fbaf3f;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
