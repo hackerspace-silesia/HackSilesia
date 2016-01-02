@@ -58,7 +58,7 @@ function restore_head {
     else
         git symbolic-ref HEAD refs/heads/$previous_branch
     fi
-    
+
     git reset --mixed
 }
 
