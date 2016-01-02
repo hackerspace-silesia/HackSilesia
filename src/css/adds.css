@@ -126,5 +126,9 @@ p.lead {
         background-attachment: scroll;
         background-position: right top;
     }
+    .what-where-when-row .col-md-3 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
 
