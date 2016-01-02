@@ -7,7 +7,4 @@ install:
 env:
   global:
   - GH_REF: github.com/hackerspace-silesia/HackSilesia.git
-  - secure: cuSsnZVFXlbg57kvdEmxvjLJ5+oMrldl00crgRlxiOVKyWTBQp50IMw8MzgMQR4PLooCT9snERtxsFh/bxcy+yCcHBdXlD/L5ojZeRuiHqgHKESeZF/JwqAmt/LJYWbzCNDfyOZGum8MN7HSOyAi86MkMAvwddkz2POICMPu6EI=
-before_script:
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - secret: bhEd1/odcHNYzrBXA41CvgApbw3Rd5ekIp4Gg6OEkc22fsFWGlthiRu1Q6+Lo2WZcsc69okabgnDxPiTT+NMBDvavejO4djFe9KGqzCuxKd2WkwCCmG93dMyWLhPzDPq3tmqOch89DO2CBztLm6XkhjLkQ5Y1po0tFEdor+ve3A=
