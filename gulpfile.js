@@ -1,22 +1,21 @@
-var gulp = require("gulp");
+var gulp = require('gulp');
 //Global
-var order = require("gulp-order");
-var concat = require("gulp-concat");
+var concat = require('gulp-concat');
 //JS
-var jshint = require("gulp-jshint");
+var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
 //CSS
 var uncss = require('gulp-uncss');
-var cssmin = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 //HTML
 var htmlmin = require('gulp-htmlmin');
+var htmlreplace = require('gulp-html-replace');
 
-var wiredep = require('wiredep').stream;
+var webserver = require('gulp-webserver');
 
 var UGLIFY = {
     sequences: true, // join consecutive statemets with the “comma operator”
-    properties: true, // optimize property access: a["foo"] → a.foo
+    properties: true, // optimize property access: a['foo'] → a.foo
     dead_code: true, // discard unreachable code
     drop_debugger: true, // discard “debugger” statements
     unsafe: true, // some unsafe optimizations (see below)
@@ -45,9 +44,10 @@ var HTMLMIN = {
 var UNCSS = {
     html: ['./src/index.html'],
     ignore: [
-        /navbar-shrink/,
         /active/,
-
+        /collapse/,
+        /in/,
+        /collapsing/,
     ]
 };
 
@@ -56,7 +56,7 @@ var CSS = {
 };
 
 function getPath(type) {
-    return "./src/**/*." + type;
+    return './src/**/*.' + type;
 }
 
 
@@ -87,33 +87,33 @@ gulp.task('watch', function () {
 });
 
 gulp.task('css', [], function () {
-    gulp.src([
-        "./src/css/agency.css",
-    ])
+    gulp.src('src/css/**/*.css')
         .pipe(uncss(UNCSS))
-        .pipe(cssmin(CSS))
+        .pipe(cssnano(CSS))
         .pipe(concat('style.min.css'))
         .pipe(gulp.dest('./deploy/css'));
 });
 
 gulp.task('html', function () {
     gulp.src(getPath('html'))
+        .pipe(htmlreplace({
+          js: 'js/scripts.min.js',
+          css: 'css/style.min.css'
+        }))
         .pipe(htmlmin(HTMLMIN))
         .pipe(gulp.dest('./deploy'));
 });
 
 
-gulp.task('scripts', ['jshint'], function () {
-    gulp.src([getPath('js'), '!./src/js/vendor/*.*'])
+gulp.task('scripts', /*['jshint'],*/ function () {
+    gulp.src([
+      'src/js/jquery.min.js',
+      'src/js/bootstrap.min.js',
+      'src/js/mdb.js',
+      'src/js/**/*.js',
+      ])
+        .pipe(concat('scripts.min.js'))
         .pipe(uglify(UGLIFY))
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('./deploy/js'));
-
-    gulp.src(['./src/js/vendor/*.js'])
-        .pipe(uglify(UGLIFY))
-        .pipe(rename(function (path) {
-            path.extname = ".min.js";
-        }))
         .pipe(gulp.dest('./deploy/js'));
 });
 
@@ -123,10 +123,14 @@ gulp.task('jshint', [], function () {
         .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('bower', function () {
-  gulp.src('./src/index.html')
-    .pipe(wiredep())
-    .pipe(gulp.dest('./deploy'));
+gulp.task('webserver', function() {
+  gulp.src('./deploy/')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: false,
+      open: true
+    }));
 });
 
-gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts']);
+
+gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts', 'webserver']);

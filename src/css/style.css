@@ -124,6 +124,10 @@
     .featurette-heading {
         font-size: 25px;
     }
+    .register-col{
+      margin-bottom: 40px;
+      font-size: 30px;
+    }
 }
 
 @media(max-width:668px) {
@@ -146,11 +150,11 @@
     }
 
     .headline h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .headline h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
