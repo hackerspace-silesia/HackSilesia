@@ -1,33 +1,31 @@
 {
-  "name": "HackSilesia",
-  "version": "0.1.0",
+  "name": "hacksilesia",
+  "version": "2.0.0",
   "description": "Hacksilesia homepage",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "dev": "gulp dev"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/hackerspace-silesia/HackSilesia.git"
   },
-  "author": "",
+  "author": "Dariusz 'Palid' Niemczyk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hackerspace-silesia/HackSilesia/issues"
   },
   "homepage": "https://github.com/hackerspace-silesia/HackSilesia",
   "devDependencies": {
-    "clean-css": "^2.2.16",
-    "gulp": "^3.8.8",
-    "gulp-concat": "^2.4.1",
-    "gulp-htmlmin": "^0.2.0",
-    "gulp-jshint": "^1.8.5",
-    "gulp-jsmin": "^0.1.4",
-    "gulp-minify-css": "^0.3.10",
-    "gulp-order": "^1.1.1",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.0.1",
-    "gulp-uncss": "^0.5.0",
-    "jshint-stylish": "^1.0.0"
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-uncss": "^1.0.4",
+    "gulp-webserver": "^0.9.1"
   }
 }

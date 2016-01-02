@@ -1,0 +1,134 @@
+@font-face {
+    font-family: HeaderFont;
+    src: url(../font/ocraextended.ttf);
+}
+
+body {
+    background-color: #FFF;
+    color: #404041;
+    font-family: 'Open Sans', sans-serif !important;
+}
+p.lead {
+    text-align: left;
+}
+.iframe-map {
+    border: 1px #C9C0BB solid;
+    box-shadow: 0px 0px 2px #888888;
+}
+
+.featurette {
+    font-weight: 300;
+    font-size: 12pt;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.featurette h2 {
+    font-family: HeaderFont;
+    color: #fbaf3f;
+    width: 100%;
+    text-align: center;
+    font-size: 25pt !important;
+    padding-bottom: 50px;
+}
+
+.featurette .lead {
+    font-size: 12pt !important;
+    font-weight: 400;
+}
+
+.featurette h4 {
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.featurette strong, .featurette b {
+    font-weight: 600;
+}
+
+.text-yellow {
+    color: #fbaf3f;
+}
+
+.very-black {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.featurette-divider {
+    visibility: hidden;
+}
+
+.col-less {
+    width: 80%;
+}
+
+.more-bigger {
+    font-size: 18pt !important;
+    font-weight: 200;
+}
+
+.agenda caption {
+    font-weight: 600;
+    color: white;
+}
+
+.text-black {
+    color: #1a1a1a;
+}
+
+.register-row {
+    width: 100%;
+    float: left;
+    font-size: 10pt;
+}
+
+.register-row img {
+    padding-bottom: 25px;
+    clear: both;
+}
+
+.register-col {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+.register-col-arrow {
+    display: none;
+
+}
+
+@media (min-width: 768px) {
+    .register-col { width: 16%; }
+}
+
+@media (min-width: 992px) {
+    .register-col { width: 9%; }
+    .register-col-arrow {
+        display: block;
+        width: 9%;
+
+        font-family: HeaderFont;
+        text-align: center;
+        float: left;
+        color: #C6C6C6;
+        font-size: 100px;
+    }
+    .headline {
+        display: none;
+    }
+    .header-image {
+        height: 463px;
+        background: url(../img/featured.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: right top;
+    }
+    .what-where-when-row .col-md-3 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
