@@ -100,6 +100,10 @@ p.lead {
 
 }
 
+nav {
+    font-size: 10pt;
+}
+
 @media (min-width: 768px) { 
     .register-col { width: 16%; }
 }

@@ -2846,13 +2846,14 @@ i.large {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
 }
 
 footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
-  line-height: 50px;
+  font-size: 8pt;
+  /*line-height: 50px;*/
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
 }
