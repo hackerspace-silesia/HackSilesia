@@ -2,10 +2,10 @@
 set -e # exit with nonzero exit code if anything fails
 
 # # clear and re-create the out directory
-# rm -rf deploy || exit 0;
+rm -rf deploy || exit 0;
 
 # # run our compile script, discussed above
-# ./compile.sh
+npm start
 
 # go to the out directory and create a *new* Git repo
 cd deploy
