@@ -3,7 +3,8 @@
     display: block;
     width: 100%;
     text-align: center;
-    background: url(../img/featured.jpg) no-repeat center center scroll;
+    font-family: HeaderFont;
+    color: #fbaf3f;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -15,7 +16,7 @@
 }
 
 .headline h1 {
-    font-size: 130px;
+    font-size: 100px;
     /*background: #fff;*/
     /*background: rgba(255,255,255,0.9);*/
 }
@@ -50,7 +51,7 @@
     margin-top: 50px;
 }
 .col-md-5 {
-padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -82,11 +83,11 @@ padding-bottom: 20px;
 
 @media(max-width:991px) {
     .headline h1 {
-        font-size: 105px;
+        font-size: 65px;
     }
 
     .headline h2 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .featurette-divider {
@@ -127,11 +128,11 @@ padding-bottom: 20px;
 
 @media(max-width:668px) {
     .headline h1 {
-        font-size: 70px;
+        font-size: 35px;
     }
 
     .headline h2 {
-        font-size: 32px;
+        font-size: 22px;
     }
 
     .featurette-divider {
@@ -145,11 +146,11 @@ padding-bottom: 20px;
     }
 
     .headline h1 {
-        font-size: 60px;
+        font-size: 30px;
     }
 
     .headline h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
