@@ -8,4 +8,6 @@ env:
   global:
   - GH_REF: github.com/hackerspace-silesia/HackSilesia.git
   - secure: cuSsnZVFXlbg57kvdEmxvjLJ5+oMrldl00crgRlxiOVKyWTBQp50IMw8MzgMQR4PLooCT9snERtxsFh/bxcy+yCcHBdXlD/L5ojZeRuiHqgHKESeZF/JwqAmt/LJYWbzCNDfyOZGum8MN7HSOyAi86MkMAvwddkz2POICMPu6EI=
-
+before_script:
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
