@@ -2,7 +2,6 @@ var gulp = require('gulp');
 //Global
 var concat = require('gulp-concat');
 //JS
-var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 //CSS
 var uncss = require('gulp-uncss');
@@ -55,39 +54,51 @@ var CSS = {
     noAdvanced: true
 };
 
-function getPath(type) {
-    return './src/**/*.' + type;
+var PATHS = {
+  js: 'src/js/**/*.js',
+  css: 'src/css/**/*.css',
+  html: 'src/index.html',
+  img: 'src/img/**.*',
+  downloads: 'src/downloads/**.*',
 }
 
-
-gulp.task('copy', function () {
-    var FONTSTYPES = [
-        'eot',
-        'svg',
-        'ttf',
-        'woff'
-    ];
-    gulp.src('./src/img/**/*.*')
-        .pipe(gulp.dest('./deploy/img'));
-
-    FONTSTYPES.forEach(function (font) {
-        gulp.src('./src/**/*' + font)
-            .pipe(gulp.dest('./deploy'));
-    });
-
-    gulp.src('./CNAME')
-        .pipe(gulp.dest('./deploy'));
+gulp.task('copyCname', function() {
+  return gulp.src('./CNAME')
+      .pipe(gulp.dest('./deploy'));
 });
+
+gulp.task('copyImages', function() {
+  gulp.src('./src/img/**/*.*')
+      .pipe(gulp.dest('./deploy/img'));
+});
+
+gulp.task('copyFonts', function() {
+  gulp.src('./src/font/**/*.*')
+      .pipe(gulp.dest('./deploy/font'));
+});
+
+gulp.task('copyDownloads', function() {
+  gulp.src('./src/downloads/**/*.*')
+      .pipe(gulp.dest('./deploy/downloads'));
+})
+
+
+gulp.task('copy', [
+  'copyCname',
+  'copyImages',
+  'copyFonts',
+  'copyDownloads'
+]);
 
 gulp.task('watch', function () {
     gulp.watch('./gulpfile.js', ['copy', 'scripts', 'html', 'css']);
-    gulp.watch(getPath('js'), ['scripts']);
-    gulp.watch(getPath('html'), ['html']);
-    gulp.watch(getPath('css'), ['css', 'copy']);
+    gulp.watch(PATHS.js, ['scripts']);
+    gulp.watch(PATHS.html, ['html']);
+    gulp.watch(PATHS.css, ['css', 'copy']);
 });
 
 gulp.task('css', [], function () {
-    gulp.src('src/css/**/*.css')
+    gulp.src(PATHS.css)
         .pipe(uncss(UNCSS))
         .pipe(cssnano(CSS))
         .pipe(concat('style.min.css'))
@@ -95,7 +106,7 @@ gulp.task('css', [], function () {
 });
 
 gulp.task('html', function () {
-    gulp.src(getPath('html'))
+    gulp.src(PATHS.html)
         .pipe(htmlreplace({
           js: 'js/scripts.min.js',
           css: 'css/style.min.css'
@@ -105,23 +116,19 @@ gulp.task('html', function () {
 });
 
 
-gulp.task('scripts', /*['jshint'],*/ function () {
+gulp.task('scripts', function () {
     gulp.src([
-      'src/js/jquery.min.js',
-      'src/js/bootstrap.min.js',
-      'src/js/mdb.js',
-      'src/js/**/*.js',
+      'src/js/vendor/jquery.min.js',
+      'src/js/vendor/bootstrap.min.js',
+      'src/js/vendor/mdb.js',
+      PATHS.js,
       ])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify(UGLIFY))
         .pipe(gulp.dest('./deploy/js'));
 });
 
-gulp.task('jshint', [], function () {
-    gulp.src([getPath('js'), '!./src/js/vendor/*.js', '!./src/js/libs/*.*'])
-        .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish'));
-});
+gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts']);
 
 gulp.task('webserver', function() {
   gulp.src('./deploy/')
@@ -132,5 +139,4 @@ gulp.task('webserver', function() {
     }));
 });
 
-
-gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts', 'webserver']);
+gulp.task('dev', ['default', 'webserver']);
