@@ -9,7 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif !important;
 }
 p.lead {
-    text-align: justify;
+    text-align: left;
 }
 .iframe-map {
     border: 1px #C9C0BB solid;
@@ -100,13 +100,13 @@ p.lead {
 
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .register-col { width: 16%; }
 }
 
 @media (min-width: 992px) {
     .register-col { width: 9%; }
-    .register-col-arrow { 
+    .register-col-arrow {
         display: block;
         width: 9%;
 
