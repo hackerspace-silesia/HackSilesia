@@ -128,7 +128,7 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('./deploy/js'));
 });
 
-gulp.task('default', ['watch', 'copy', 'css', 'html', 'scripts']);
+gulp.task('default', ['copy', 'css', 'html', 'scripts']);
 
 gulp.task('webserver', function() {
   gulp.src('./deploy/')
@@ -139,4 +139,4 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('dev', ['default', 'webserver']);
+gulp.task('dev', ['default', 'webserver', 'watch']);
