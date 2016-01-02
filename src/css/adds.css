@@ -20,7 +20,7 @@ p.lead {
     font-weight: 300;
     font-size: 12pt;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
     font-weight: 400;
 }
 
@@ -98,10 +98,6 @@ p.lead {
 .register-col-arrow {
     display: none;
 
-}
-
-nav {
-    font-size: 10pt;
 }
 
 @media (min-width: 768px) { 
