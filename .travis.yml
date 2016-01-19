@@ -8,3 +8,6 @@ env:
   global:
   - GH_REF: github.com/hackerspace-silesia/HackSilesia.git
   - secure: DDfBMCGxDZHfnZrevt3R6r5dK782HQVQFSxmnrBkK2T+O9KW3AfmQvp8JJkLGiBwmrMOZBD6Ndocw8RAGtKrlfXzveBi3j1DOq6n862IAPV4r8eR3bHLZj2jiG5sCK1BFs+ZYwudhLtICBWeK3OzGfqIPXhWQHHUNVqAwkjUi20=
+branches:
+  only:
+    - master
