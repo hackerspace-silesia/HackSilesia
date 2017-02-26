@@ -1,13 +1,13 @@
 language: node_js
 node_js:
 - '5.3'
-script: bash travis_deploy.sh
+script:
+- bash travis_deploy.sh
 install:
 - npm install
 env:
   global:
-  - GH_REF: github.com/hackerspace-silesia/HackSilesia.git
-  - secure: DDfBMCGxDZHfnZrevt3R6r5dK782HQVQFSxmnrBkK2T+O9KW3AfmQvp8JJkLGiBwmrMOZBD6Ndocw8RAGtKrlfXzveBi3j1DOq6n862IAPV4r8eR3bHLZj2jiG5sCK1BFs+ZYwudhLtICBWeK3OzGfqIPXhWQHHUNVqAwkjUi20=
+  - GH_REF: hackerspace-silesia/HackSilesia.git
 branches:
   only:
-    - master
+  - master
