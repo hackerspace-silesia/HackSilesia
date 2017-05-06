@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "docker-build": "docker build . --tag swoldanski/hacksilesia",
+    "docker-push": "docker push swoldanski/hacksilesia"
   },
   "private": true,
   "repository": {
