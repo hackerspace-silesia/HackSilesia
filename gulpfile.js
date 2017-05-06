@@ -139,7 +139,7 @@ gulp.task('images', function () {
 gulp.task('default', ['copy', 'css', 'html', 'scripts', 'images']);
 
 gulp.task('webserver', function() {
-  gulp.src('./deploy/')
+  gulp.src('./src/')
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
