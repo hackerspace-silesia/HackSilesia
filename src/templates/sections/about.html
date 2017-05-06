@@ -1,0 +1,40 @@
+{% extends 'templates/common/section.html' %}
+
+{% block name %}about{% endblock %}
+{% block title %} O HackSilesii {% endblock %}
+{% block content %}
+<div class='row text-center'>
+  <div class="col-xs-12">
+    <p>
+      <strong>{{ title }} {{ subtitle }}</strong> to już trzecia edycja 24-godzinnego katowickiego Hackatonu. <br>
+      Po raz kolejny nawiążemy współpracę z przedstawicielami Organizacji Pozarządowych, <br>
+      by wspólnie zmajstrować coś dobrego!
+    </p>
+  </div>
+  <div class="col-xs-12 col-md-4 col-md-offset-2">
+    <img src="img/style/two-faces.png" alt="">
+
+    <h3>Uczestnicy:</h3>
+    <p class="lead">Hackaton = maraton tylko dla programistów?</p>
+
+    <p class="lead">
+    <strong>Bzdura!</strong> Zapraszamy <strong>programistów</strong>,
+    <strong>projektantów graficznych</strong>, <strong>aktywistów</strong>... <br>
+    Pamiętaj, że najciekawsze projekty powstają w interdyscyplinarnych zespołach. <br><br>
+    Masz wątpliwości, czy <strong>{{ title }}</strong> jest dla Ciebie? Zerknij do sekcji <a href="#faq">FAQ</a> lub napisz do nas, a rozwiejemy Twoje wątpliwości!</p>
+    <br>
+    <a href="mailto:kontakt@hacksilesia.pl">kontakt@hacksilesia.pl</a>
+  </div>
+  <div class="col-xs-12 col-md-4">
+      <img src="img/style/face-4.png" alt="">
+      <h3>Partnerzy i sponsorzy:</h3>
+
+      <p>
+      Jesteś członkiem organizacji pozarządowej?
+      Skontaktuj się z nami i otwórz nam oczy na problem, dla którego wspólnymi siłami znajdziemy kreatywne rozwiązanie
+      na <strong>{{ title }}: {{ subtitle }}</strong>
+      </p>
+  </div>
+
+</div>
+{% endblock %}

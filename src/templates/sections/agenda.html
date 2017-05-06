@@ -1,0 +1,81 @@
+{% extends 'templates/common/section.html' %}
+
+{% block name %}agenda{% endblock %}
+{% block title %} Agenda {% endblock %}
+{% block content %}
+<div class='row'>
+  <div class='col-md-8 col-md-offset-2'>
+    <table class='table agenda'>
+      <caption>PIĄTEK 2017-09-08</caption>
+      <tbody>
+        <tr>
+          <th>18:00</th>
+          <td>Zaczynamy!</td>
+        </tr>
+        <tr>
+          <th>19:15</th>
+          <td>Oficjalne otwarcie
+            <strong>{{ title }}</strong></td>
+        </tr>
+        <tr>
+          <th>19:30</th>
+          <td>Sesje mentoringowe i prezentacje tematów</td>
+        </tr>
+        <tr>
+          <th>20:30</th>
+          <td>Budowanie zespołów</td>
+        </tr>
+        <tr>
+          <th>21:00</th>
+          <td>Kodowanie czas zacząć!</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class='row'>
+  <div class='col-md-8 col-md-offset-2'>
+    <table class='table agenda'>
+      <caption>SOBOTA 2017-09-09</caption>
+      <tbody>
+        <tr>
+          <th>08:00</th>
+          <td>Śniadanie</td>
+        </tr>
+        <tr>
+          <th>09:00</th>
+          <td>Kodowania ciąg dalszy</td>
+        </tr>
+        <tr>
+          <th>13:00</th>
+          <td>Obiad</td>
+        </tr>
+        <tr>
+          <th>16:30</th>
+          <td>Walczymy do końca, przygotowujemy prezentacje.
+          </td>
+        </tr>
+        <tr>
+          <th>17:30</th>
+          <td>Finałowe prezentacje</td>
+        </tr>
+        <tr>
+          <th>19:00</th>
+          <td>Obrady Jury</th>
+        </tr>
+        <tr>
+          <th>19:30</th>
+          <td>Ogłoszenie wyników i wręczenie nagród</td>
+        </tr>
+        <tr>
+          <th>21:00</th>
+          <td>Oficjalne zakończenie
+            <strong>{{ title }}</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
+

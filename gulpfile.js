@@ -6,6 +6,9 @@ var uglify = require('gulp-uglify');
 //CSS
 var uncss = require('gulp-uncss');
 var cssnano = require('gulp-cssnano');
+var postcss = require('gulp-postcss');
+var cssNext = require('postcss-cssnext');
+var nested = require('postcss-nested');
 //HTML
 var htmlmin = require('gulp-htmlmin');
 var htmlreplace = require('gulp-html-replace');
@@ -14,6 +17,11 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant'); // $ npm i -D imagemin-pngquant
 
 var webserver = require('gulp-webserver');
+
+// templates
+var nunjucks = require('gulp-nunjucks');
+
+var CONFIG = require('./TEMPLATES_CONFIG.js');
 
 var UGLIFY = {
     sequences: true, // join consecutive statemets with the “comma operator”
@@ -44,7 +52,7 @@ var HTMLMIN = {
 };
 
 var UNCSS = {
-    html: ['./src/index.html'],
+    html: ['./deploy/index.html'],
     ignore: [
         /active/,
         /collapse/,
@@ -61,8 +69,10 @@ var PATHS = {
   js: 'src/js/**/*.js',
   css: 'src/css/**/*.css',
   html: 'src/index.html',
+  templates: 'src/templates/**/*.html',
   img: 'src/img/**.*',
   downloads: 'src/downloads/**.*',
+  fonts: 'src/font/**.*',
 }
 
 gulp.task('copyCname', function() {
@@ -87,19 +97,29 @@ gulp.task('copy', [
   'copyDownloads'
 ]);
 
-gulp.task('watch', function () {
-    gulp.watch('./gulpfile.js', ['copy', 'scripts', 'html', 'css']);
+gulp.task('watch', ['copy', 'cssdev', 'html', 'scripts', 'images'], function () {
     gulp.watch(PATHS.js, ['scripts']);
-    gulp.watch(PATHS.html, ['html']);
-    gulp.watch(PATHS.css, ['css', 'copy']);
+    gulp.watch([PATHS.html, PATHS.templates], ['html']);
+    gulp.watch(PATHS.css, ['cssdev']);
+    gulp.watch(PATHS.downloads, ['copyDownloads']);
+    gulp.watch(PATHS.fonts, ['copyFonts']);
+    gulp.watch(PATHS.img, ['images']);
 });
 
-gulp.task('css', [], function () {
+gulp.task('css', ['html'], function () {
     gulp.src(PATHS.css)
         .pipe(uncss(UNCSS))
+        .pipe(postcss([nested, cssNext]))
         .pipe(cssnano(CSS))
         .pipe(concat('style.min.css'))
         .pipe(gulp.dest('./deploy/css'));
+});
+
+gulp.task('cssdev', function () {
+  gulp.src(PATHS.css)
+    .pipe(postcss([nested, cssNext]))
+    .pipe(concat('style.min.css'))
+    .pipe(gulp.dest('./deploy/css'));
 });
 
 gulp.task('html', function () {
@@ -108,6 +128,7 @@ gulp.task('html', function () {
           js: 'js/scripts.min.js',
           css: 'css/style.min.css'
         }))
+        .pipe(nunjucks.compile(CONFIG))
         .pipe(htmlmin(HTMLMIN))
         .pipe(gulp.dest('./deploy'));
 });
@@ -139,12 +160,12 @@ gulp.task('images', function () {
 gulp.task('default', ['copy', 'css', 'html', 'scripts', 'images']);
 
 gulp.task('webserver', function() {
-  gulp.src('./src/')
+  gulp.src('./deploy/')
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
-      open: true
+      open: false
     }));
 });
 
-gulp.task('dev', ['default', 'webserver', 'watch']);
+gulp.task('dev', ['webserver', 'watch']);

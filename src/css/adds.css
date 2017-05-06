@@ -1,13 +1,3 @@
-@font-face {
-    font-family: HeaderFont;
-    src: url(../font/ocraextended.ttf);
-}
-
-body {
-    background-color: #FFF;
-    color: #404041;
-    font-family: 'Open Sans', sans-serif !important;
-}
 p.lead {
     text-align: left;
 }
@@ -21,7 +11,6 @@ p.lead {
 }
 
 .featurette h2 {
-    font-family: HeaderFont;
     color: #fbaf3f;
     width: 100%;
     text-align: center;
@@ -106,7 +95,6 @@ p.lead {
         display: block;
         width: 9%;
 
-        font-family: HeaderFont;
         text-align: center;
         float: left;
         color: #C6C6C6;
@@ -116,13 +104,13 @@ p.lead {
         display: none;
     }
     .header-image {
-        height: 463px;
-        background: url(../img/featured.png);
+        height: 311px;
+        background: url(../img/style/featured.png);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position: right top;
     }
-    .what-where-when-row .col-md-3 {
+    .when-row .col-md-3 {
         margin-left: 40px;
         margin-right: 40px;
     }

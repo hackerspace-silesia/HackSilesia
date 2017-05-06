@@ -1,0 +1,84 @@
+/* Fonts */
+
+:root {
+    --bg-primary: #404042;
+    --bg-secondary: #fff;
+    --text-primary: #404041;
+    --text-secondary: #fbaf3f;
+    --text-tertiary: #f1f1f3;
+}
+
+body {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-secondary);
+}
+
+p, span {
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--text-secondary);
+}
+
+.font--1 {
+    color: var(--text-secondary);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.font--2 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.font--3 {
+    font-size: 14px;
+}
+
+.font--4 {
+    font-size: 18px;
+}
+
+.navbar-hacksilesia {
+    background-color: var(--text-secondary);
+    border-color: rgba(0, 0, 0, .1);
+    color: var(--bg-secondary);
+
+    a, .nav > li > a {
+        color: hsla(0, 0%, 100%, .84);
+
+        &:hover {
+          color: hsla(0, 0%, 100%, .84);
+          background-color: rgba(0, 0, 0, .05);
+        }
+    }
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>.active>a:hover {
+    color: hsla(0, 0%, 100%, .84);
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.section-1 {
+    background-color: var(--bg-primary);
+    color: var(--text-tertiary);
+}
+
+.section-2 {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+

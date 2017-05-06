@@ -1,0 +1,9 @@
+<div class="{{ getBackgroundClass() }}">
+  <div class="container featurette">
+    <hr class="featurette-divider" id="{% block name %}OVERRIDE_ME{% endblock %}" />
+    <h2>{% block title %}OVERRIDE_ME{% endblock %}</h2>
+    {% block content %}
+      OVERRIDE ME TOO
+    {% endblock %}
+  </div>
+</div>
