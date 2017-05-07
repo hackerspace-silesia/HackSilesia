@@ -6,9 +6,10 @@
   "scripts": {
     "start": "gulp",
     "dev": "gulp dev",
-    "docker-build": "docker build . --tag swoldanski/hacksilesia",
+    "docker-build": "docker build . --tag palid/hacksilesia",
     "docker-push": "docker push palid/hacksilesia",
-    "docker-full": "gulp && cp docker-robots.txt deploy/robots.txt && npm run docker-build && npm run docker-push"
+    "docker-start": "gulp && cp docker-robots.txt deploy/robots.txt",
+    "docker-full": "npm run docker-start && npm run docker-build && npm run docker-push"
   },
   "private": true,
   "repository": {
