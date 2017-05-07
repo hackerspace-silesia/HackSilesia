@@ -138,7 +138,7 @@ gulp.task('scripts', function () {
     gulp.src([
       'src/js/vendor/jquery.min.js',
       'src/js/vendor/bootstrap.min.js',
-      'src/js/vendor/mdb.js',
+      'src/js/smooth-scroll.js',
       PATHS.js,
       ])
         .pipe(concat('scripts.min.js'))

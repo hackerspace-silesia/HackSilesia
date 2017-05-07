@@ -63,7 +63,15 @@ a {
           background-color: rgba(0, 0, 0, .05);
         }
     }
+    .navbar-toggle {
+      border-color: hsla(0,0%,100%,.84);
+
+      .icon-bar {
+        background-color: hsla(0,0%,100%,.84)
+      }
+    }
 }
+
 
 .navbar .navbar-nav>.active>a,
 .navbar .navbar-nav>.active>a:focus,
