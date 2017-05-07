@@ -58,7 +58,7 @@ a {
     a, .nav > li > a {
         color: hsla(0, 0%, 100%, .84);
 
-        &:hover {
+        &:hover, &:focus, &:active {
           color: hsla(0, 0%, 100%, .84);
           background-color: rgba(0, 0, 0, .05);
         }

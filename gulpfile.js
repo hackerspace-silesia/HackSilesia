@@ -137,7 +137,7 @@ gulp.task('html', function () {
 gulp.task('scripts', function () {
     gulp.src([
       'src/js/vendor/jquery.min.js',
-      'src/js/vendor/bootstrap.min.js',
+      'src/js/vendor/mini-bootstrap.min.js',
       'src/js/smooth-scroll.js',
       PATHS.js,
       ])
