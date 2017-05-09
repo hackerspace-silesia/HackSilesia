@@ -15,7 +15,7 @@
     <!-- Main template style. -->
     <link href="css/hacksilesia-2017.css" rel="stylesheet">
   <!-- endbuild -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,700italic,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800i&amp;subset=latin-ext" rel="stylesheet">
   {% include 'templates/meta.html' %}
 </head>
 
@@ -420,43 +420,14 @@
     </div> -->
   </div>
   <!-- /.container -->
-  <!-- Footer -->
-  <footer class="page-footer indigo darken-1">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-8">
-          <ul class="list-inline social-buttons text-center">
-            <li><a class="darken-2 indigo" href="https://twitter.com/hs_silesia"><i class="icon-twitter"></i></a>
-            </li>
-            <li><a class="darken-2 indigo" href="https://facebook.com/HackerspaceSilesia"><i class="icon-facebook"></i></a>
-            </li>
-            <li><a class="darken-2 indigo" href="mailto:kontakt@hacksilesia.pl"><i class="icon-mail"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class='footer-copyright'>
-      <div class="container">
-        <span class="copyright">
-          Styl oraz kolorystykę przygotowała Urszula Mitas |
-          Treść oraz działy przygotował Hackerspace Silesia
-        </span>
-      </div>
-    </div>
-  </footer>
-
+  {% include 'templates/footer.html' %}
 
   <!-- build:js -->
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script type="text/javascript" src="js/vendor/jquery.easing.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/mini-bootstrap.min.js"></script>
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
 
   <!-- endbuild -->

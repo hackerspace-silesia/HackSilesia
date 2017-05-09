@@ -84,35 +84,3 @@ p.lead {
     display: none;
 
 }
-
-@media (min-width: 768px) {
-    .register-col { width: 16%; }
-}
-
-@media (min-width: 992px) {
-    .register-col { width: 9%; }
-    .register-col-arrow {
-        display: block;
-        width: 9%;
-
-        text-align: center;
-        float: left;
-        color: #C6C6C6;
-        font-size: 100px;
-    }
-    .headline {
-        display: none;
-    }
-    .header-image {
-        height: 311px;
-        background: url(../img/style/featured.png);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: right top;
-    }
-    .when-row .col-md-3 {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-}
-

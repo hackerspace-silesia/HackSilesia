@@ -72,7 +72,7 @@ var PATHS = {
   templates: 'src/templates/**/*.html',
   img: 'src/img/**.*',
   downloads: 'src/downloads/**.*',
-  fonts: 'src/font/**.*',
+  fonts: 'src/fonts/**.*',
 }
 
 gulp.task('copyCname', function() {
@@ -81,8 +81,8 @@ gulp.task('copyCname', function() {
 });
 
 gulp.task('copyFonts', function() {
-  return gulp.src('./src/font/**/*.*')
-      .pipe(gulp.dest('./deploy/font'));
+  return gulp.src('./src/fonts/**/*.*')
+      .pipe(gulp.dest('./deploy/fonts'));
 });
 
 gulp.task('copyDownloads', function() {
