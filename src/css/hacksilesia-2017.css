@@ -115,6 +115,15 @@ a {
   }
 }
 
+.organizers {
+  h4, span {
+    font-style: normal;
+  }
+  .row {
+    margin-bottom: 50px;
+  }
+}
+
 .copyright {
   display: block;
   padding: 20px 0;
