@@ -198,7 +198,7 @@
   .header-image {
     height: 464px;
     background: url(../img/style/featured.png);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: right top;
   }
