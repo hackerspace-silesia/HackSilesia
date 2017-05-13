@@ -203,6 +203,12 @@
     background-position: right top;
   }
 
+  .header-overlay {
+    height: 464px;
+    background: url(../img/style/bg-pattern.png);
+    background-repeat: repeat;
+  }
+
   .when-row .col-md-3 {
     margin-left: 40px;
     margin-right: 40px;

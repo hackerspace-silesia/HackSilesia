@@ -31,36 +31,13 @@ p.lead {
 .featurette strong, .featurette b {
     font-weight: 600;
 }
-
-.text-yellow {
-    color: #fbaf3f;
-}
-
-.very-black {
-    background-color: #1a1a1a;
-    color: white;
-}
-
 .featurette-divider {
     visibility: hidden;
-}
-
-.col-less {
-    width: 80%;
 }
 
 .more-bigger {
     font-size: 18pt !important;
     font-weight: 200;
-}
-
-.agenda caption {
-    font-weight: 600;
-    color: white;
-}
-
-.text-black {
-    color: #1a1a1a;
 }
 
 .register-row {
