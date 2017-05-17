@@ -3,8 +3,20 @@
   display: block;
   width: 100%;
   text-align: center;
-  color: #fbaf3f;
   background-size: cover;
+
+  h1, h2 {
+    color: #404041;
+  }
+  .headline {
+    padding: 96px 0;
+  }
+}
+
+.header-overlay {
+  background: url(../img/style/bg-pattern.png);
+  background-repeat: repeat;
+  height: 385px;
 }
 
 .headline {
@@ -195,6 +207,10 @@
     display: none;
   }
 
+  .header-overlay {
+    height: 464px;
+  }
+
   .header-image {
     height: 464px;
     background: url(../img/style/bg-overlay.png);
@@ -205,12 +221,6 @@
     margin-right: auto;
     max-width: 95%;
     background-size: contain;
-  }
-
-  .header-overlay {
-    height: 464px;
-    background: url(../img/style/bg-pattern.png);
-    background-repeat: repeat;
   }
 
   .when-row .col-md-3 {
