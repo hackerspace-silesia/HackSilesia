@@ -197,10 +197,10 @@
 
   .header-image {
     height: 464px;
-    background: url(../img/style/featured.png);
+    background: url(../img/style/bg-overlay.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: right top;
+    background-position: center center;
   }
 
   .header-overlay {
