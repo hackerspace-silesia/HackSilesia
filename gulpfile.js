@@ -21,6 +21,8 @@ var nunjucks = require('gulp-nunjucks');
 
 var CONFIG = require('./TEMPLATES_CONFIG.js');
 
+var browserSync = require('browser-sync').create();
+
 var UGLIFY = {
   sequences: true, // join consecutive statemets with the “comma operator”
   properties: true, // optimize property access: a['foo'] → a.foo
@@ -96,12 +98,12 @@ gulp.task('copy', [
 ]);
 
 gulp.task('watch', ['copy', 'cssdev', 'html', 'scripts', 'images'], function() {
-  gulp.watch(PATHS.js, ['scripts']);
-  gulp.watch([PATHS.html, PATHS.templates], ['html']);
   gulp.watch(PATHS.css, ['cssdev']);
   gulp.watch(PATHS.downloads, ['copyDownloads']);
   gulp.watch(PATHS.fonts, ['copyFonts']);
   gulp.watch(PATHS.img, ['images']);
+  gulp.watch([PATHS.html, PATHS.templates], ['html']);
+  gulp.watch(PATHS.js, ['scripts']).on('change', browserSync.reload);
 });
 
 gulp.task('css', ['html'], function() {
@@ -117,7 +119,8 @@ gulp.task('cssdev', function() {
   gulp.src(PATHS.css)
     .pipe(postcss([nested, cssNext]))
     .pipe(concat('style.min.css'))
-    .pipe(gulp.dest('./deploy/css'));
+    .pipe(gulp.dest('./deploy/css'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('html', function() {
@@ -127,8 +130,19 @@ gulp.task('html', function() {
       css: 'css/style.min.css'
     }))
     .pipe(nunjucks.compile(CONFIG))
+    .on('error', function(err){
+        browserSync.notify(err.message, 3000);
+        this.emit('end');
+    })
     .pipe(htmlmin(HTMLMIN))
-    .pipe(gulp.dest('./deploy'));
+    .pipe(gulp.dest('./deploy'))
+    .pipe(browserSync.stream());
+    // setTimeout(function() {
+    //   setTimeout(function() {
+    //       browserSync.reload();
+    //       done();
+    //   });
+    // });
 });
 
 
@@ -160,15 +174,12 @@ gulp.task('images', function() {
 gulp.task('default', ['copy', 'css', 'html', 'scripts', 'images']);
 
 if (process.env.NODE_ENV === 'dev') {
-  var webserver = require('gulp-webserver');
   gulp.task('webserver', function() {
-    gulp.src('./deploy/')
-      .pipe(webserver({
-        livereload: true,
-        directoryListing: false,
-        open: false
-      }));
+      browserSync.init({
+          server: './deploy/'
+      });
   });
+
 
   gulp.task('dev', ['webserver', 'watch']);
 }
