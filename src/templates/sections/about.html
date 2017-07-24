@@ -12,54 +12,13 @@
     </p>
     <div class="featurette-divider"></div>
   </div>
-  <div class="col-xs-12">
-    <div class="featurette-divider"></div>
-    <div class="row text-center map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.6769554262905!2d19.02815651546331!3d50.260617479449564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce343ace14c3%3A0x58185fc1cfa3dd72!2sCentrum+Informacji+Naukowej+i+Biblioteka+Akademicka!5e0!3m2!1spl!2spl!4v1494094306756" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="featurette-divider"></div>
-  </div>
-  <div class="col-xs-12 col-md-11 col-md-offset-1 text-left">
-    <div class="featurette-divider"></div>
-
-    <img src="img/style/two-faces.png" alt="">
-
-    <h3>Uczestnicy:</h3>
-    <p class="lead">Hackaton = maraton tylko dla programistów?</p>
-
-    <p class="lead">
-    <strong>Bzdura!</strong> Zapraszamy <strong>programistów</strong>,
-    <strong>projektantów graficznych</strong>, <strong>aktywistów</strong>... <br>
-    Pamiętaj, że najciekawsze projekty powstają w interdyscyplinarnych zespołach. <br><br>
-    Masz wątpliwości, czy <strong>{{ title }}</strong> jest dla Ciebie? Zerknij do sekcji <a href="#faq">FAQ</a> lub napisz do nas na <a href="mailto:kontakt@hacksilesia.pl">kontakt@hacksilesia.pl</a>, a rozwiejemy Twoje wątpliwości!</p>
-    <br>
-  </div>
-  <div class="col-xs-12 col-md-4 col-md-offset-1 text-left">
-      <img src="img/style/partner.png" alt="">
-      <h3>Partnerzy:</h3>
-
-      <p>
-      Jesteś członkiem organizacji pozarządowej?
-      Skontaktuj się z nami i otwórz nam oczy na problem, dla którego wspólnymi siłami znajdziemy kreatywne rozwiązanie
-      na <strong>{{ title }}: {{ subtitle }}</strong>
-      </p>
-  </div>
-
-  <div class="col-xs-12 col-md-4 col-md-offset-2 text-left">
-      <img src="img/style/sponsor.png" alt="">
-      <h3>Sponsorzy:</h3>
-
-      <p>
-        Jest wiele sposobów, aby wesprzeć nasz Hackaton. Zobacz nasz <a href="">Pakiet Sponsorski</a> i skontaktuj się z nami!
-      </p>
-  </div>
-
-  <div class="col-xs-12 col-md-11 col-md-offset-1 text-left">
-      <h4>Poprzednie edycje:</h4>
-      <p>
-        <a href="http://2014.hacksilesia.pl">HackSilesia #1</a> <br>
-        <a href="http://2016.hacksilesia.pl">HackSilesia #2: For The Greater Good!</a> <br>
-      </p>
-  </div>
 </div>
+
+{% include 'templates/sections/time_place.html' %}
+{% include 'templates/sections/map.html' %}
+{% include 'templates/sections/info_first.html' %}
+{% include 'templates/sections/info_second.html' %}
+{% include 'templates/sections/never_give_up.html' %}
+{% include 'templates/sections/last_editions.html' %}
+
 {% endblock %}

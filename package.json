@@ -22,8 +22,7 @@
     "url": "https://github.com/hackerspace-silesia/HackSilesia/issues"
   },
   "homepage": "https://github.com/hackerspace-silesia/HackSilesia",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "gulp": "^3.9.1",
     "browser-sync": "^2.18.13",
