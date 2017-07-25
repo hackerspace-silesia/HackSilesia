@@ -6,8 +6,8 @@
   "scripts": {
     "start": "gulp",
     "dev": "NODE_ENV='dev' gulp dev",
-    "docker-build": "docker build . --tag palid/hacksilesia",
-    "docker-push": "docker push palid/hacksilesia",
+    "docker-build": "docker build . --tag hssilesia/hacksilesia",
+    "docker-push": "docker push hssilesia/hacksilesia",
     "docker-start": "gulp && cp docker-robots.txt deploy/robots.txt",
     "docker-full": "npm run docker-start && npm run docker-build && npm run docker-push"
   },
