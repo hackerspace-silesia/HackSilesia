@@ -22,10 +22,9 @@
     "url": "https://github.com/hackerspace-silesia/HackSilesia/issues"
   },
   "homepage": "https://github.com/hackerspace-silesia/HackSilesia",
-  "devDependencies": {},
-  "dependencies": {
-    "gulp": "^3.9.1",
+  "devDependencies": {
     "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.0.0",
     "gulp-html-replace": "^1.5.5",
@@ -38,5 +37,7 @@
     "imagemin-pngquant": "^4.2.0",
     "postcss-cssnext": "^2.10.0",
     "postcss-nested": "^1.0.1"
+  },
+  "dependencies": {
   }
 }
