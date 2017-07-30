@@ -36,6 +36,7 @@ p.lead {
   width: 100%;
   float: left;
   font-size: 10pt;
+  clear: both;
 }
 .register-row img {
   padding-bottom: 25px;
