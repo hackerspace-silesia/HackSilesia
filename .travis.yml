@@ -4,7 +4,7 @@ node_js:
 script:
 - bash travis_deploy.sh
 install:
-- npm install --production
+- npm install
 env:
   global:
   - GH_REF: hackerspace-silesia/HackSilesia.git
