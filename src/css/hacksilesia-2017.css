@@ -1,9 +1,18 @@
 :root {
+    /* Colors */
     --bg-primary: #404042;
     --bg-secondary: #fff;
     --text-primary: #404041;
     --text-secondary: #fbaf3f;
     --text-tertiary: #f1f1f3;
+    --text-fourth: #faaf40;
+
+    /* Font sizes */
+    --font-enormous: 60px;
+    --font-big: 28px;
+    --font-big__body: 26px;
+    --font-medium: 18px;
+    --font-small: 14px;
 }
 
 body {
@@ -34,6 +43,10 @@ p, span {
 
 a {
   color: var(--text-secondary);
+}
+
+button {
+  font-weight: 700;
 }
 
 .font--1 {
@@ -121,6 +134,46 @@ a {
   }
   .row {
     margin-bottom: 50px;
+  }
+}
+
+.text--title {
+  color: var(--text-fourth);
+  font-size: var(--font-enormous);
+}
+
+.text--subtitle {
+  color: var(--text-big);
+  font-size: var(--font-primary);
+}
+
+.text--button__main {
+  font-size: var(--text-medium);
+  color: var(--bg-secondary);
+}
+
+.text--button__secondary {
+  font-size: var(--text-small);
+  color: var(--text--fourth);
+}
+
+.text--body {
+  font-size: var(--text-medium);
+  line-height: 26px;
+
+  &__default {
+    color: var(--text-primary);
+  }
+  &__white {
+    color: var(--bg-secondary);
+  }
+  &__yellow {
+    color: var(--text-fourth);
+  }
+  &__small {
+    line-height: 18px;
+    color: var(--text-primary);
+    font-size: var(--text-small);
   }
 }
 

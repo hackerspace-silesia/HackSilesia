@@ -6,8 +6,8 @@
   "scripts": {
     "start": "gulp",
     "dev": "NODE_ENV='dev' gulp dev",
-    "docker-build": "docker build . --tag palid/hacksilesia",
-    "docker-push": "docker push palid/hacksilesia",
+    "docker-build": "docker build . --tag hssilesia/hacksilesia",
+    "docker-push": "docker push hssilesia/hacksilesia",
     "docker-start": "gulp && cp docker-robots.txt deploy/robots.txt",
     "docker-full": "npm run docker-start && npm run docker-build && npm run docker-push"
   },
@@ -24,9 +24,7 @@
   "homepage": "https://github.com/hackerspace-silesia/HackSilesia",
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1"
-  },
-  "dependencies": {
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.0.0",
     "gulp-html-replace": "^1.5.5",
@@ -39,5 +37,7 @@
     "imagemin-pngquant": "^4.2.0",
     "postcss-cssnext": "^2.10.0",
     "postcss-nested": "^1.0.1"
+  },
+  "dependencies": {
   }
 }

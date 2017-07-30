@@ -2,7 +2,7 @@ version: '3'
 
 services:
   website:
-    image: swoldanski/hacksilesia:latest
+    image: hssilesia/hacksilesia:latest
     build:
       context: .
       dockerfile: Dockerfile

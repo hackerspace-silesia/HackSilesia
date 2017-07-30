@@ -5,52 +5,20 @@
 {% block content %}
 <div class='row'>
   <div class="col-xs-12 text-center">
-    <p>
+    <p class="text--body text--body__default">
       <strong>{{ title }} {{ subtitle }}</strong> to już trzecia edycja 24-godzinnego katowickiego Hackatonu. <br>
       Po raz kolejny nawiążemy współpracę z przedstawicielami Organizacji Pozarządowych, <br>
       by wspólnie zmajstrować coś dobrego!
     </p>
     <div class="featurette-divider"></div>
   </div>
-  <div class="col-xs-12 col-md-11 col-md-offset-1 text-left">
-    <img src="img/style/two-faces.png" alt="">
-
-    <h3>Uczestnicy:</h3>
-    <p class="lead">Hackaton = maraton tylko dla programistów?</p>
-
-    <p class="lead">
-    <strong>Bzdura!</strong> Zapraszamy <strong>programistów</strong>,
-    <strong>projektantów graficznych</strong>, <strong>aktywistów</strong>... <br>
-    Pamiętaj, że najciekawsze projekty powstają w interdyscyplinarnych zespołach. <br><br>
-    Masz wątpliwości, czy <strong>{{ title }}</strong> jest dla Ciebie? Zerknij do sekcji <a href="#faq">FAQ</a> lub napisz do nas na <a href="mailto:kontakt@hacksilesia.pl">kontakt@hacksilesia.pl</a>, a rozwiejemy Twoje wątpliwości!</p>
-    <br>
-  </div>
-  <div class="col-xs-12 col-md-4 col-md-offset-1 text-left">
-      <img src="img/style/partner.png" alt="">
-      <h3>Partnerzy:</h3>
-
-      <p>
-      Jesteś członkiem organizacji pozarządowej?
-      Skontaktuj się z nami i otwórz nam oczy na problem, dla którego wspólnymi siłami znajdziemy kreatywne rozwiązanie
-      na <strong>{{ title }}: {{ subtitle }}</strong>
-      </p>
-  </div>
-
-  <div class="col-xs-12 col-md-4 col-md-offset-2 text-left">
-      <img src="img/style/sponsor.png" alt="">
-      <h3>Sponsorzy:</h3>
-
-      <p>
-        Jest wiele sposobów, aby wesprzeć nasz Hackaton. Zobacz nasz <a href="">Pakiet Sponsorski</a> i skontaktuj się z nami!
-      </p>
-  </div>
-
-  <div class="col-xs-12 col-md-11 col-md-offset-1 text-left">
-      <h4>Poprzednie edycje:</h4>
-      <p>
-        <a href="http://2014.hacksilesia.pl">HackSilesia #1</a> <br>
-        <a href="http://2016.hacksilesia.pl">HackSilesia #2: For The Greater Good!</a> <br>
-      </p>
-  </div>
 </div>
+
+{% include 'templates/sections/time_place.html' %}
+{% include 'templates/sections/map.html' %}
+{% include 'templates/sections/info_first.html' %}
+{% include 'templates/sections/info_second.html' %}
+{% include 'templates/sections/never_give_up.html' %}
+{% include 'templates/sections/last_editions.html' %}
+
 {% endblock %}

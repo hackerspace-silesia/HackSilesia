@@ -6,3 +6,11 @@ HackSilesia
 
 Strona hackathonu HackSilesia 
 
+
+## Howto develop
+
+
+```js
+npm install
+npm run dev
+```

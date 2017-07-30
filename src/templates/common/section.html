@@ -1,9 +1,11 @@
 <div class="{{ getBackgroundClass() }}">
   <div class="container featurette">
     <hr class="featurette-divider" id="{% block name %}OVERRIDE_ME{% endblock %}" />
-    <h2>{% block title %}OVERRIDE_ME{% endblock %}</h2>
+    <h1 class="text--title text-center">{% block title %}OVERRIDE_ME{% endblock %}</h1>
+    <hr class="featurette-divider"/>
     {% block content %}
       OVERRIDE ME TOO
     {% endblock %}
+    <br />
   </div>
 </div>

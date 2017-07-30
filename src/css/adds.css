@@ -1,63 +1,55 @@
 p.lead {
-    text-align: left;
+  text-align: left;
 }
-
 .featurette {
-    font-weight: 300;
-    font-size: 12pt;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    font-weight: 400;
-}
+  font-weight: 300;
+  font-size: 12pt;
+  font-weight: 400;
 
-.featurette h2 {
+  &--title {
     color: #fbaf3f;
     width: 100%;
     text-align: center;
-    font-size: 25pt !important;
+    font-size: 60px !important;
     padding-bottom: 50px;
+  }
 }
-
 .featurette .lead {
-    font-size: 12pt !important;
-    font-weight: 400;
+  font-size: 12pt !important;
+  font-weight: 400;
 }
-
 .featurette h4 {
-    font-size: 20pt;
-    font-weight: 600;
+  font-size: 20pt;
+  font-weight: 600;
 }
-
 .featurette strong, .featurette b {
-    font-weight: 600;
+  font-weight: 600;
 }
 .featurette-divider {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 .more-bigger {
-    font-size: 18pt !important;
-    font-weight: 200;
+  font-size: 18pt !important;
+  font-weight: 200;
 }
-
 .register-row {
-    width: 100%;
-    float: left;
-    font-size: 10pt;
+  width: 100%;
+  float: left;
+  font-size: 10pt;
+  clear: both;
 }
-
 .register-row img {
-    padding-bottom: 25px;
-    clear: both;
+  padding-bottom: 25px;
+  clear: both;
 }
-
 .register-col {
-    text-align: center;
-    width: 100%;
-    float: left;
+  text-align: center;
+  width: 100%;
+  float: left;
 }
-
 .register-col-arrow {
-    display: none;
-
+  display: none;
+}
+.orange {
+  color: #FAAF40 !important;
 }
