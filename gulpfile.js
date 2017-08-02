@@ -53,7 +53,7 @@ var HTMLMIN = {
 };
 
 var UNCSS = {
-  html: ['./deploy/index.html', './deploy/sponsors/*.html'],
+  html: ['./deploy/*.html'],
   ignore: [
     /active/,
     /collapse/,
