@@ -3,10 +3,45 @@
 {% block name %}partnership{% endblock %}
 {% block title %}Wspierają nas{% endblock %}
 {% block content %}
-<div class='row text-center'>
-  <div class="col-xs-12">
-    <p>Więcej informacji już wkrótce!</p>
+<div class='h2 text-center'>Sponsorzy</div>
+{% for column_sponsors in sponsors %}
+  {% set len = column_sponsors.length %}
+  <div class='row text-center'>
+      {% for sponsor in column_sponsors %}
+      <div class="col-md-offset-{{partnership_offsets.md[len]}} col-sm-offset-{{partnership_offsets.sm[len]}} col-xs-12 col-sm-4 col-md-3 ">
+          <a href='{{sponsor.url}}' target='_blank'>
+              <div class='sponsor-img text-center'>
+                  <img src='img/sponsors/{{sponsor.logo}}' alt='{{sponsor.name}}' />
+              </div>
+          </a>
+          {% if sponsor.short_desc %}
+          <p class='text-justify'>
+              {{sponsor.short_desc}}&hellip;
+          </p>
+          <a href='sponsor_{{sponsor.short_name}}.html'>Czytaj dalej</a>
+          {% endif %}
+      </div>
+      {% endfor %}
   </div>
   <div class="featurette-divider"></div>
-</div>
+  {% endfor %}
+<div class="featurette-divider"></div>
+<div class='h2 text-center'>Partnerzy</div>
+<div class="featurette-divider"></div>
+  {% for column_partnerships in partnerships %}
+  {% set len = column_partnerships.length %}
+  <div class='row text-center'>
+      {% for partnership in column_partnerships %}
+      <div class="col-sm-offset-{{partnership_offsets.sm[len]}} col-xs-12 col-sm-3">
+          <a href='{{partnership.url}}' target='_blank'>
+              <div class='partnership-img text-center'>
+                  <img src='img/partnerships/{{partnership.logo}}' alt='{{partnership.name}}' />
+              </div>
+          </a>
+      </div>
+      {% endfor %}
+  </div>
+  <div class="featurette-divider"></div>
+  {% endfor %}
+<div class="featurette-divider"></div>
 {% endblock %}

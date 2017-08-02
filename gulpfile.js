@@ -18,6 +18,7 @@ var pngquant = require('imagemin-pngquant'); // $ npm i -D imagemin-pngquant
 
 // templates
 var nunjucks = require('gulp-nunjucks');
+var nunjucksLib = require('nunjucks');
 
 var CONFIG = require('./TEMPLATES_CONFIG.js');
 
@@ -52,7 +53,7 @@ var HTMLMIN = {
 };
 
 var UNCSS = {
-  html: ['./deploy/index.html'],
+  html: ['./deploy/index.html', './deploy/sponsors/*.html'],
   ignore: [
     /active/,
     /collapse/,
@@ -102,7 +103,7 @@ gulp.task('watch', ['copy', 'cssdev', 'html', 'scripts', 'images'], function() {
   gulp.watch(PATHS.downloads, ['copyDownloads']);
   gulp.watch(PATHS.fonts, ['copyFonts']);
   gulp.watch(PATHS.img, ['images']);
-  gulp.watch([PATHS.html, PATHS.templates], ['html']);
+  gulp.watch([PATHS.html, PATHS.templates, 'src/sponsors/*.html'], ['html']);
   gulp.watch(PATHS.js, ['scripts']).on('change', browserSync.reload);
 });
 
@@ -124,12 +125,14 @@ gulp.task('cssdev', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src(PATHS.html)
+  gulp.src([PATHS.html, 'src/sponsors/*.html'])
+    .pipe(nunjucks.compile(CONFIG, {
+        env: new nunjucksLib.Environment(new nunjucksLib.FileSystemLoader('src/'))
+    }))
     .pipe(htmlreplace({
       js: 'js/scripts.min.js',
       css: 'css/style.min.css'
     }))
-    .pipe(nunjucks.compile(CONFIG))
     .on('error', function(err){
         browserSync.notify(err.message, 3000);
         this.emit('end');
@@ -137,12 +140,6 @@ gulp.task('html', function() {
     .pipe(htmlmin(HTMLMIN))
     .pipe(gulp.dest('./deploy'))
     .pipe(browserSync.stream());
-    // setTimeout(function() {
-    //   setTimeout(function() {
-    //       browserSync.reload();
-    //       done();
-    //   });
-    // });
 });
 
 

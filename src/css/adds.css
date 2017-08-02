@@ -1,3 +1,24 @@
+.big-space {
+  height: 120px;
+}
+.sponsor-img {
+  width: 200px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+}
+.sponsor-big-img {
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+.sponsor-big-img img {
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+}
 p.lead {
   text-align: left;
 }
