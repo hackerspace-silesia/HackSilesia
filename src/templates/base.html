@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <!-- build:css -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/adds.css" rel="stylesheet" />
+    <!-- Template style -->
+    <!-- Main template style. -->
+    <link href="css/hacksilesia-2017.css" rel="stylesheet">
+  <!-- endbuild -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800i&amp;subset=latin-ext" rel="stylesheet">
+  {% include 'templates/meta.html' %}
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  {% include 'templates/navigation.html' %}
+  {% block main_content %} {% endblock %}
+  <!-- /.container -->
+  {% include 'templates/footer.html' %}
+
+  <!-- build:js -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/vendor/mini-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+  <!-- endbuild -->
+  <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-40373398-3', 'auto');
+  ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

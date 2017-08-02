@@ -4,13 +4,13 @@
 {% block title %}Wspierają nas{% endblock %}
 {% block content %}
 <div class='h2 text-center'>Sponsorzy</div>
-  {% for column_sponsors in sponsors %}
+{% for column_sponsors in sponsors %}
   {% set len = column_sponsors.length %}
   <div class='row text-center'>
       {% for sponsor in column_sponsors %}
       <div class="col-md-offset-{{partnership_offsets.md[len]}} col-sm-offset-{{partnership_offsets.sm[len]}} col-xs-12 col-sm-4 col-md-3 ">
           <a href='{{sponsor.url}}' target='_blank'>
-              <div class='sponsor-img'>
+              <div class='sponsor-img text-center'>
                   <img src='img/sponsors/{{sponsor.logo}}' alt='{{sponsor.name}}' />
               </div>
           </a>
@@ -18,7 +18,7 @@
           <p class='text-justify'>
               {{sponsor.short_desc}}&hellip;
           </p>
-          <a href=''>Czytaj dalej</a>
+          <a href='sponsor_{{sponsor.short_name}}.html'>Czytaj dalej</a>
           {% endif %}
       </div>
       {% endfor %}
@@ -34,7 +34,7 @@
       {% for partnership in column_partnerships %}
       <div class="col-sm-offset-{{partnership_offsets.sm[len]}} col-xs-12 col-sm-3">
           <a href='{{partnership.url}}' target='_blank'>
-              <div class='partnership-img'>
+              <div class='partnership-img text-center'>
                   <img src='img/partnerships/{{partnership.logo}}' alt='{{partnership.name}}' />
               </div>
           </a>

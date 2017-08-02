@@ -1,0 +1,22 @@
+{% extends 'templates/base.html' %}
+{% block main_content %}
+<div class="big-space"></div>
+<div class='row'>
+    <div class='col-xs-12 col-sm-4 text-center sponsor-big-img' >
+        <img src='img/sponsors/{% block img %}IMG{% endblock %}' />
+    </div>
+    <div class='col-xs-12 col-sm-8'>
+        <h2>{% block name %}NAME{% endblock %}</h2>
+        <p>{% block description %}DESC{% endblock %}</p>
+        <div class="featurette-divider"></div>
+    </div>
+</div>
+<div class='row'>
+    <div class='text-center'>
+        <a class='btn btn-lg btn-warning' href='{% block link %}LINK{% endblock %}' target='_blank'>Zobacz stronę sponsora</a>
+        <br /> <br />
+        <a class='btn btn-xs btn-warning' href='/#partnership' >Powrót na stronę główną</a>
+    </div>
+</div>
+<div class="featurette-divider"></div>
+{% endblock %}

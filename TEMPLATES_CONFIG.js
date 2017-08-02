@@ -26,6 +26,7 @@ var config = {
     [
         {
           name: "Future Processing",
+          short_name: "fp",
           logo: "fp.png",
           desc: "Jesteśmy firmą technologiczną założoną w 2000r., która z grupki przyjaciół przekształciła się w 750-osobowy zespół. Zajmujemy się tworzeniem oprogramowania dla klientów prowadzących działalność w różnych sektorach rynku. Od początku istnienia Future Processing chcieliśmy, aby FP było miejscem, w którym pracuje szczęśliwy, zintegrowany i zmotywowany zespół. Lubimy to, co robimy i chcemy to robić jak najlepiej.",
           short_desc: "Jesteśmy firmą technologiczną założoną w 2000r., która z grupki przyjaciół przekształciła się w 750-osobowy zespół",
@@ -33,6 +34,7 @@ var config = {
         },
         {
           name: "ClearCode",
+          short_name: "cc",
           logo: "cc.png",
           desc: "Jesteśmy software housem o wyjątkowej historii - założonym przez rodowitych Ślązaków, którzy wystartowali z biznesem we Wrocławiu, by po dobrych kilku latach podjąć decyzję o powrocie do korzeni - tak oto w 2014 roku powstało biuro Clearcode w Katowicach. W projektach stawiamy na specjalizację i konsekwentnie idziemy w Ad Tech, MarTech i analytics, dostarczając klientom skille techniczne i potężny zasób wiedzy branżowej. Z pragnienia szerzenia dobrych praktyk i prowokowania dyskusji wywodzą się nasze najlepsze inicjatywy, jak Ferajny czy Beer & Bacon, w ramach których dzielimy się wiedzą i wspólnie rozwijamy",
           short_desc: "Jesteśmy software housem o wyjątkowej historii - założonym przez rodowitych Ślązaków, którzy wystartowali z biznesem",
