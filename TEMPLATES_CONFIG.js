@@ -43,10 +43,11 @@ var config = {
         {name: "Wasko", logo: "wasko.png", url: "https://www.wasko.pl/"},
     ]
   ],
-  partnerships: [ 
+  partnerships: [
       [
           {name: "ChallengeRocket", logo: "challengerocket.png", url: "https://challengerocket.com/pl/"},
           {name: "Silesia Jug", logo: "silesia-jug.png", url: "http://silesia.jug.pl"},
+          {name: "SoftwareHut", logo: "softwarehut.png", url: "http://softwarehut.com/"}
       ]
   ],
   partnership_offsets: {
