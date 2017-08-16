@@ -37,6 +37,13 @@ var config = {
           logo: "cc.png",
           short_desc: "Jesteśmy software housem o wyjątkowej historii - założonym przez rodowitych Ślązaków, którzy wystartowali z biznesem",
           url: "http://clearcode.cc"
+        },
+        {
+          name: "Voucherify",
+          short_name: "voucherify",
+          logo: "voucherify.png",
+          short_desc: "platforma dla programistów, ułatwiająca implementację kampanii promocyjnych opartych o kupony",
+          url: "https://www.voucherify.io"
         }
     ], [
         {name: "Sii", logo: "sii.jpg", url: "https://sii.pl/"},
