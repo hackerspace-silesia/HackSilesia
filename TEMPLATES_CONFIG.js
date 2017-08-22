@@ -55,7 +55,10 @@ var config = {
           {name: "ChallengeRocket", logo: "challengerocket.png", url: "https://challengerocket.com/pl/"},
           {name: "Silesia Jug", logo: "silesia-jug.png", url: "http://silesia.jug.pl"},
           {name: "SoftwareHut", logo: "softwarehut.png", url: "http://softwarehut.com/"},
-          {name: "Koduj Dla Polski", logo: "kdp.png", url: "https://kodujdlapolski.pl/"}
+      ],
+      [
+          {name: "Koduj Dla Polski", logo: "kdp.png", url: "https://kodujdlapolski.pl/"},
+          {name: "TVP Katowice", logo: "tvp.jpg", url: "https://katowice.tvp.pl/"}
       ]
   ],
   partnership_offsets: {
