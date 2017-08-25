@@ -48,8 +48,8 @@ var config = {
     ], [
         {name: "Sii", logo: "sii.jpg", url: "https://sii.pl/"},
         {name: "Wasko", logo: "wasko.png", url: "https://www.wasko.pl/"},
-        {name: "KatoDesk", logo: "katodesk.png", url: "http://katodesk.com/"}
-        {name: "Dobre Ziele", logo: "dobre_ziele.png", url: "https://dobreziele.pl/"},
+        {name: "KatoDesk", logo: "katodesk.png", url: "http://katodesk.com/"},
+        {name: "Dobre Ziele", logo: "dobre_ziele.png", url: "https://dobreziele.pl/"}
     ]
   ],
   partnerships: [
