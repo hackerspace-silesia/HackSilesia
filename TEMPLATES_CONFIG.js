@@ -49,7 +49,9 @@ var config = {
         {name: "Sii", logo: "sii.jpg", url: "https://sii.pl/"},
         {name: "Wasko", logo: "wasko.png", url: "https://www.wasko.pl/"},
         {name: "KatoDesk", logo: "katodesk.png", url: "http://katodesk.com/"},
-        {name: "Dobre Ziele", logo: "dobre_ziele.png", url: "https://dobreziele.pl/"}
+        {name: "Dobre Ziele", logo: "dobre_ziele.png", url: "https://dobreziele.pl/"},
+        {name: "Soft Kraft", logo: "soft_kraft.jpg", url: "http://softkraft.co"},
+        {name: "Idea Hub", logo: "idea_hub.png", url: "https://www.facebook.com/IdeaHubDlaPrzedsiebiorcow/"},
     ]
   ],
   partnerships: [
@@ -61,7 +63,7 @@ var config = {
       [
           {name: "Koduj Dla Polski", logo: "kdp.png", url: "https://kodujdlapolski.pl/"},
           {name: "TVP Katowice", logo: "tvp.jpg", url: "https://katowice.tvp.pl/"},
-          {name: "PLPUG", logo: "plpug.png", url: "https://plpug.org/"}
+          {name: "PLPUG", logo: "plpug.png", url: "https://plpug.org/"},
       ]
   ],
   partnership_offsets: {
