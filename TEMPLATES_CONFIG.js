@@ -52,6 +52,7 @@ var config = {
         {name: "Dobre Ziele", logo: "dobre_ziele.png", url: "https://dobreziele.pl/"},
         {name: "Soft Kraft", logo: "soft_kraft.jpg", url: "http://softkraft.co"},
         {name: "Idea Hub", logo: "idea_hub.png", url: "https://www.facebook.com/IdeaHubDlaPrzedsiebiorcow/"},
+        {name: "Mestudent", logo: "mestudent.png", url: "http://www.mestudent.jobs", class: "mestudent"},
     ]
   ],
   partnerships: [

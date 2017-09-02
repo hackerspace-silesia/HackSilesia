@@ -8,7 +8,7 @@
   {% set len = column_sponsors.length %}
   <div class='row text-center'>
       {% for sponsor in column_sponsors %}
-      <div class="col-md-offset-{{partnership_offsets.md[len]}} col-sm-offset-{{partnership_offsets.sm[len]}} col-xs-12 col-sm-4 col-md-3 ">
+      <div class="col-md-offset-{{partnership_offsets.md[len]}} col-sm-offset-{{partnership_offsets.sm[len]}} col-xs-12 col-sm-4 col-md-3 {{sponsor.class}}">
           <a href='{{sponsor.url}}' target='_blank'>
               <div class='sponsor-img'>
                   <img src='img/sponsors/{{sponsor.logo}}' alt='{{sponsor.name}}' />
