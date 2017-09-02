@@ -50,6 +50,7 @@ var config = {
         {name: "Wasko", logo: "wasko.png", url: "https://www.wasko.pl/"},
         {name: "KatoDesk", logo: "katodesk.png", url: "http://katodesk.com/"},
         {name: "Dobre Ziele", logo: "dobre_ziele.png", url: "https://dobreziele.pl/"},
+    ], [
         {name: "Soft Kraft", logo: "soft_kraft.jpg", url: "http://softkraft.co"},
         {name: "Idea Hub", logo: "idea_hub.png", url: "https://www.facebook.com/IdeaHubDlaPrzedsiebiorcow/"},
         {name: "Mestudent", logo: "mestudent.png", url: "http://www.mestudent.jobs", class: "mestudent"},
