@@ -53,7 +53,7 @@ var config = {
     ], [
         {name: "Soft Kraft", logo: "soft_kraft.jpg", url: "http://softkraft.co"},
         {name: "Idea Hub", logo: "idea_hub.png", url: "https://www.facebook.com/IdeaHubDlaPrzedsiebiorcow/"},
-        {name: "Mestudent", logo: "mestudent.png", url: "http://www.mestudent.jobs", class: "mestudent"},
+        {name: "Mestudent", logo: "mestudent.png", url: "http://www.mestudent.jobs"},
     ]
   ],
   partnerships: [
